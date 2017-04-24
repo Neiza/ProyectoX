@@ -1,0 +1,11 @@
+body{
+   background:transparent url("../img/cargando.gif") center  center
+   no-repeat;
+}
+
+img{
+   border-radius: 15px 50px;
+   padding: 20px;
+   width: 200px;
+   height: 150px;
+}
