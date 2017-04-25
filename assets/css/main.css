@@ -3,9 +3,24 @@ body{
    no-repeat;
 }
 
-img{
-   border-radius: 15px 50px;
-   padding: 20px;
-   width: 200px;
-   height: 150px;
+nav ul {
+  list-style: none;
 }
+
+nav ul li{
+}
+
+nav ul li a{
+  text-decoration: none;
+
+}
+
+.btn-sign{
+
+}
+
+img{
+   border-radius: 15px;
+}
+
+btn
