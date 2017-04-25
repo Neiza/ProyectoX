@@ -1,17 +1,98 @@
+body{
+  margin:0;
+}
+.container{
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 7%;
+  padding-bottom: 3%;
+  background-color: red;
+  height: 50%;
+}
+.content-slide{
+  position: relative;
+  width: 100%;
+  height: 23em;
+  background-color: blue;
+}
+.arrows{
+  position: absolute;
+  width: 65%;
+  height: 100%;
+  color: #283C61;
+  z-index: 1000;
+
+}
+.icon-circle-left{
+  position: absolute;
+  left: 2px;
+  font-size: 25px;
+  top: 45%;
+}
+.icon-circle-right{
+  position: absolute;
+  right: 2px;
+  font-size: 25px;
+  top: 45%;
+}
 .content-img{
-  max-width:500px;
-  max-height: 250px;
-  background-color: yellow;
+  width: 65%;
+  height: 100%;
+  position: relative;
 }
 .mySlides {
+  position: relative;
   display:none;
-  width: 150%;
+  width: 100%;
   height: 100%;
 }
 .img1,.img2,.img3,.img4,.img5,.img6{
   width: 100%;
   height: 100%;
 }
-estrellas{
-  background-color: white;
+
+.descp1{
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top:0;
+  padding-left: 3%;
+  padding-right: 3%;
+  width: 29%;
+  height: 100%;
+  text-align: right;
+}
+.estrellas{
+
+  font-size: 20px;
+  display: inline-block;
+  color: yellow;
+}
+.cont-list{
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: brown;
+}
+.cont-list-movies{
+  background-color: #39A9DC;
+  position: relative;
+  width: 100%;
+  height: 100px;
+
+}
+.cont-list-series{
+  background-color: #E62940;
+  position: relative;
+  width: 100%;
+  height: 100px;
+}
+.descp1 h1{
+  margin: 9px 1px;
+  text-align: right;
+}
+.encabezado2{
+  text-align: right;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 600;
 }

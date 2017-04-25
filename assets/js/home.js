@@ -1,14 +1,54 @@
-var myIndex = 0;
-carousel();
-
-function carousel() {
+var index = 1;
+var t=5000;
+var btnA=document.getElementById("btnAfter");
+var btnB=document.getElementById("btnBefore");
+var mySlides = document.getElementsByClassName("mySlides");
+showNext1();
+//Time to Slide1
+function showNext1() {
     var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-       x[i].style.display = "none";
+    for (i = 0; i < mySlides.length; i++) {
+       mySlides[i].style.display = "none";
     }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-  //  setTimeout(carousel, 2000); // Change image every 2 seconds
+    index++;
+
+    if (index > mySlides.length) {
+      index = 1;
+    }
+    if(index>0){
+      console.log(index);
+      mySlides[index-1].style.display = "block";
+    }
+    else{
+      index=6;
+      mySlides[index-1].style.display = "block";
+    }
+  setTimeout(showNext1, t); // Change image every 2 seconds
 }
+
+ btnB.addEventListener("click", function(){
+   for (i = 0; i < mySlides.length; i++) {
+      mySlides[i].style.display = "none";
+   }
+     index=index-1;
+     if(index>0){
+       console.log(index);
+       mySlides[index-1].style.display = "block";
+     }
+     else{
+       index=6;
+        mySlides[index-1].style.display = "block";
+     }
+ });
+ btnA.addEventListener("click", function (){
+   index++;
+
+   for (i = 0; i < mySlides.length; i++) {
+      mySlides[i].style.display = "none";
+   }
+   if (index > mySlides.length) {
+     index = 1;
+   }
+   console.log(index);
+   mySlides[index-1].style.display = "block";
+ });
