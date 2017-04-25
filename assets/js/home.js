@@ -23,7 +23,7 @@ function showNext1() {
       index=6;
       mySlides[index-1].style.display = "block";
     }
-  setTimeout(showNext1, t); // Change image every 2 seconds
+//  setTimeout(showNext1, t); // Change image every 2 seconds
 }
 
  btnB.addEventListener("click", function(){
@@ -52,3 +52,26 @@ function showNext1() {
    console.log(index);
    mySlides[index-1].style.display = "block";
  });
+
+
+//
+function divImage(listMovies,nameFile){
+      var contForDiv=document.getElementById("cont-list-movies");
+      for(var i=0;i<listMovies.length;i++){
+          var divForMovie=document.createElement("div");
+
+          contForDiv.appendChild(divForMovie);
+          divForMovie.setAttribute("id",name);
+          divForMovie.setAttribute("class","divCoder"+nameFile);
+          var imgForMovie=document.createElement("img");
+          imgForMovie.setAttribute("src","assets/image/"+nameFile+"/"+listMovies[i]);
+          imgForMovie.setAttribute("class",nameFile);
+          divForMovie.appendChild(imgForMovie);
+          var space=document.createElement("br");
+          divForMovie.appendChild(space);
+          var nameCoder=document.createElement("span");
+          nameCoder.classList.add("nameCoder");
+          nameCoder.innerHTML=name;
+          divForMovie.appendChild(nameCoder);
+      }
+  }

@@ -93,6 +93,25 @@ body{
 .encabezado2{
   text-align: right;
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 600;
+}
+.descp1 p{
+  font-size: 15px;
+}
+.btnPlay,.btnDesc{
+  width: 26%;
+  height: 10%;
+  border-radius: 5px;
+  color: white;
+  background-color: red;
+  position: absolute;
+}
+.btnPlay{
+  right: 58%;
+  bottom:8%;
+}
+.btnDesc{
+  right: 15%;
+  bottom: 8%;
 }
