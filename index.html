@@ -9,10 +9,10 @@
   <link rel="stylesheet" href="assets/fonts/icon-fonts/style.css">
 </head>
 <body>
-  <div class="">
-    <a href="#" class="btn-menu">MENU <span class=""></span></a>
+    <div class="menu">
+    <a href="#" class="btn-menu">MENU <span class="icon-menu"></span></a>
   </div>
-  <nav>
+  <nav id="nav-bar">
     <ul>
       <li><a href="#"><span class="icon-home-outline"></span>HOME</a></li>
       <li><a href="#"><span class="icon-film"></span>MOVIES</a></li>
@@ -24,8 +24,29 @@
     <!-- aquí se agruparan las imágenes-->
   </div>
   <div class="btn-sign">
-    <input type="button" name="sign-up" value="Sign up">
-    <input type="button" name="sign-in" value=" Sign in">
+    <a  href="#" class="sign-up">SIGN UP</a>
+    <a  href="#" class="sign-in">SIGN IN</a>
   </div>
+  <div class="sign-in-container">
+    <form class="form-sign-in"  method="get">
+      <h2>SIGN IN</h2>
+      <span id="X">X</span>
+      <input class="email" type="email" name="email" value="" placeholder="Email">
+      <span id="wrongEmail"></span>
+      <br>
+      <input class="password" type="password" name="password" value="" placeholder="Password">
+      <span id="wrongPassword"></span>
+      <br>
+      <input class="check-box" type="checkbox" name="" value=""><span id="rememberme">Remember me</span>
+      <a href="#" id="forgot">Forgot your password?</a>
+      <input  class="btn-sign-in" type="button" name="" value="SIGN IN">
+    </form>
+  </div>
+  <div class="background">
+
+  </div>
+  <script type="text/javascript" src="assets/js/app.js">
+
+  </script>
 </body>
 </html>

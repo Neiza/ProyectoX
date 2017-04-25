@@ -1,6 +1,40 @@
-body{
-   background:transparent url("../img/cargando.gif") center  center
-   no-repeat;
+*{
+}
+.background{
+   background-image: url("../img/background/background3.jpg");
+   background-repeat: no-repeat;
+   position: fixed;
+   display: inline-block;
+    z-index: -1;
+    top: 0;
+   right: 0;
+    opacity: .9;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+  padding: 10px 30px;
+  margin: 0 10px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  font-size: 20px;
+  border: 2px solid #da326f;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-menu, .icon-menu{
+  color: #da326f;
+  text-decoration: none;
+}
+
+nav{
+position: absolute;
+top: 30%;
+left:5%;
+display: none;
 }
 
 nav ul {
@@ -8,19 +42,152 @@ nav ul {
 }
 
 nav ul li{
+  width: 200px;
+  padding: 10px;
+  margin: 25px 10px;
+  font-size: 20px;
+  border: 2px solid #da326f;
+  border-radius: 20px;
 }
 
 nav ul li a{
   text-decoration: none;
+  margin-left: 15px;
+  color: #da326f;
+}
+
+nav ul li span{
+  padding: 5px 10px 5px 5px;
+  color: #da326f;
 
 }
 
-.btn-sign{
-
+.show{
+  display: block;
 }
+
 
 img{
    border-radius: 15px;
+   width: 100px;
+   height: 100px;
 }
 
-btn
+.btn-sign{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
+
+.sign-up, .sign-in{
+  font-weight: bolder;
+  color: #62459a;
+  background-color:rgba(218, 50, 111, 0.8);
+  text-decoration: none;
+  width: 100px;
+  padding: 10px;
+  margin: 25px 10px;
+  font-size: 20px;
+  border: 2px solid #da326f;
+  border-radius: 20px;
+}
+
+.sign-up:hover, .sign-in:hover{
+font-size: 25px;
+transition: 1s;
+}
+
+.sign-in-container{
+  box-sizing: border-box;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(98, 69, 154, 0.6);
+  display:none;
+  width:100%;
+  height: 100%;
+}
+
+.form-sign-in{
+  box-sizing: border-box;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  height: 60%;
+  padding: 5%;
+  background-color: white;
+  border: 10px solid #946baf;
+}
+form h2 {
+  letter-spacing: 4px;
+  word-spacing: 7px;
+}
+
+form #X{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  color: #62459a;
+  font-weight: bold;
+}
+
+form .email, form .password {
+  position: absolute;
+  width: 60%;
+  height: 7%;
+  border:2px solid rgba(98, 69, 154, 0.6);
+}
+
+form #wrongEmail, form #wrongPassword{
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  font-size: 0.8em;
+  color: #3276b1;
+  display: none;
+}
+
+
+form #wrongEmail{
+  top: 45.5%;
+  display: none;
+}
+
+form .password{
+  top: 50%;
+}
+
+form #forgot{
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  text-decoration: none;
+  color: black;
+  }
+
+form .check-box{
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  width: 15px;
+  height: 15px;
+}
+
+form #rememberme{
+  position: absolute;
+  bottom: 15%;
+  left: 17%;
+}
+
+form .btn-sign-in{
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  width: 100px;
+  height: 30px;
+  background-color: #62459a;
+  color: white;
+  border-radius: 10px;
+}
