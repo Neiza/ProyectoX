@@ -10,10 +10,13 @@ var wrongPassword = document.getElementById("wrongPassword");
 var email = document.getElementsByClassName("email")[0];
 var password = document.getElementsByClassName("password")[0];
 var botonSignIn = document.getElementsByClassName("btn-sign-in")[0];
+/*var sourcesYoutube = [{"1","https://www.youtube.com/watch?v=JebwYGn5Z3E"}
+                      {"2", "https://www.youtube.com/watch?v=UMRBs0-OXCA"}]*/
+var iframe = document.getElementById("frame");
 
 var expressionEmail                = /\w+@+\w+\.+[a-z]/;
 var expressionPassword6Characters  =/^[A-Za-z0-9_]{6,20}$/;
-var nPortadas = 20;
+var nPortadas = 11;
 
 function createImages(){
   for (var i = 1; i <= nPortadas; i++) {
@@ -27,7 +30,6 @@ function createImages(){
     container.appendChild(div);
     }
 }
-
 
 function EmailValidation(){
 		if ((!expressionEmail.test(email.value))){
@@ -57,6 +59,12 @@ function sigInForm(){
   signInContainer.style.display = "block";
 }
 
+function trailer(){
+  for(var i=0; i<sources.length; i++){
+    iframe.src = sources[i]
+
+  }
+}
 
 window.addEventListener("load", function(){
   createImages();
