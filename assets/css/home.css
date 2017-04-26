@@ -19,7 +19,8 @@ body{
   position: relative;
   width: 100%;
   height: 23em;
-  background-color:#541885;
+  background-color: #3b1854;
+  color: white;
 }
 .arrows{
   position: absolute;
@@ -27,10 +28,10 @@ body{
   height: 100%;
   color: #283C61;
   z-index: 1000;
-
 }
-.cont-list h1{
+.cont-list h1 {
   font-family: 'Exo', sans-serif;
+  background-color: #AC998A;
 }
 .icon-circle-left{
   position: absolute;
@@ -136,17 +137,17 @@ body{
 .divMovietwo, .divSerietwo{
 
   position: relative;
-    display: inline-block;
-    width: 20%;
-    height: 500px;
-margin: 0.5% 2%;
+  display: inline-block;
+  width: 20%;
+  height: 500px;
+  margin: 0.5% 2%;
 }
 .divMovie, .divSerie{
-    display: inline-block;
-    position: relative;
-    width: 88%;
-    height: 220px;
-    margin: 5% 5% 3% 3%;
+  display: inline-block;
+  position: relative;
+  width: 88%;
+  height: 220px;
+  margin: 5% 5% 3% 3%;
 }
 
 .cont-list img{
@@ -179,6 +180,7 @@ margin: 0.5% 2%;
 }
 .divMovie:hover .imgMovie,.divSerie:hover .imgSerie{
   opacity: 0.3;
+  cursor: pointer;
 }
 .divMovie .icon-play,.divSerie .icon-play{
   left: 36%;
@@ -190,4 +192,7 @@ margin: 0.5% 2%;
 }
 .divMovie:hover .icon-play,.divSerie:hover .icon-play{
   visibility: visible;
+}
+.cont-list h1:hover {
+    color: white;
 }

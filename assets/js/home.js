@@ -11,7 +11,6 @@ function showNext1() {
        mySlides[i].style.display = "none";
     }
     index++;
-
     if (index > mySlides.length) {
       index = 1;
     }
@@ -42,7 +41,6 @@ function showNext1() {
  });
  btnA.addEventListener("click", function (){
    index++;
-
    for (i = 0; i < mySlides.length; i++) {
       mySlides[i].style.display = "none";
    }
@@ -51,7 +49,6 @@ function showNext1() {
    }
    mySlides[index-1].style.display = "block";
  });
-
 var listMovies=16;
 var listSeries=8;
 var nameFileMovies="assets/img/img-home/p";
@@ -76,15 +73,11 @@ function divImage(list,nameFile,slides,nameDiv,type,nameimg){
             divForElement.appendChild(imgForElement);
             var nameElement=document.createElement("span");
             nameElement.classList.add("icon-play");
-
             divForElement.appendChild(nameElement);
             divFortwo.appendChild(divForElement);
         }
-
         contForDiv.appendChild(divFortwo);
       }
-
-
   }
 divImage(listMovies,nameFileMovies,"slidesMovies","divMovie","Movie","p");
 divImage(listSeries,nameFileSeries,"slidesSeries","divSerie","Serie","serie");
