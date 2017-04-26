@@ -69,22 +69,16 @@ body{
   color: yellow;
 }
 .cont-list{
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
   background-color: brown;
 }
-.cont-list-movies{
-  background-color: #39A9DC;
-  position: relative;
-  width: 100%;
-  height: 100px;
 
-}
 .cont-list-series{
   background-color: #E62940;
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 1000px;
 }
 .descp1 h1{
   margin: 9px 1px;
@@ -100,8 +94,8 @@ body{
   font-size: 15px;
 }
 .btnPlay,.btnDesc{
-  width: 26%;
-  height: 10%;
+  width: 27%;
+  height: 13%;
   border-radius: 5px;
   color: white;
   background-color: red;
@@ -112,6 +106,50 @@ body{
   bottom:8%;
 }
 .btnDesc{
-  right: 15%;
+  right: 11%;
   bottom: 8%;
+}
+.cont-list-movies{
+  background-color: #39A9DC;
+  position: relative;
+  width: 100%;
+  height: 580px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+}
+.slidesMovies, .slidesSeries{
+  position: relative;
+  width: 92%;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.divMovietwo, .divSerietwo{
+  background-color: red;
+  position: relative;
+    display: inline-block;
+    width: 20%;
+    height: 450px;
+margin: 0.5% 2%;
+}
+.divMovie, .divSerie{
+    display: inline-block;
+    width: 88%;
+    height: 215px;
+    margin: 5% 5% 3% 3%;
+}
+
+.cont-list img{
+  width: 100%;
+  height: 100%;
+}
+.icon-device-camera-video, .icon-live_tv{
+  margin-left: 10px;
+}
+.arrowsMovie{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #283C61;
+  z-index: 1000;
 }
