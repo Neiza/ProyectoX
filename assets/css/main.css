@@ -23,6 +23,8 @@
 .logo img{
   width: 250px;
   height: 170px;
+  border-radius: 50%;
+
 }
 
 .menu {

@@ -11,6 +11,7 @@ var wrongPassword = document.getElementById("wrongPassword");
 var email = document.getElementsByClassName("email")[0];
 var password = document.getElementsByClassName("password")[0];
 var botonSignIn = document.getElementsByClassName("btn-sign-in")[0];
+var dragbutton = document.getElementsByClassName("drag-drop")[0];
 var sourcesYoutube = ["https://www.youtube.com/embed/JebwYGn5Z3E?ecver=1",
                       "https://www.youtube.com/embed/TKUluYL7Mcc?ecver=1",
                       "https://www.youtube.com/embed/6l_HeQyKEOU?ecver=1",
@@ -108,6 +109,45 @@ function trailer(){
     })
   }
 }
+
+function start(e){
+  for(var i=0; i<images.legth; i++){
+      e.dataTransfer.setDAta("text", images[i]);
+  }
+}
+
+
+
+for (var i = 0; i < images.length; i++) {
+  images[i].addEventListener("dragstar", start);
+}
+
+
+/*function drop(e){
+  var link1 = "https://www.youtube.com/embed/JebwYGn5Z3E?ecver=1";
+  var link2 = "https://www.youtube.com/embed/TKUluYL7Mcc?ecver=1";
+  var link3 = "https://www.youtube.com/embed/6l_HeQyKEOU?ecver=1";
+  var link4 = "https://www.youtube.com/embed/WBb3fojgW0Q?ecver=1";
+  var link5 = "https://www.youtube.com/embed/5DIADh4lMq8?ecver=1";
+  var link6 = "https://www.youtube.com/embed/LNGW6mmemz8?ecver=1";
+  var link7 = "https://www.youtube.com/embed/wZdpNglLbt8?ecver=1";
+  var link8 = "https://www.youtube.com/embed/uisBaTkQAEs?ecver=1";
+  var link9 = "https://www.youtube.com/embed/0SDU6LlgdAw?ecver=1";
+  var link10 = "https://www.youtube.com/embed/5PSNL1qE6VY?ecver=1";
+  var link11 = "https://www.youtube.com/embed/RK8xHq6dfAo?ecver=1";
+
+  var m = [link1, link2, link3, link4, link5, link6, link7, link8, link9,link10, link11]
+
+  for (var i=0; i<sourcesYoutube.length; i++){
+     var imgDrag = document.createElement("img");
+      dragbutton.appendChild(imgDrag);
+      img.src =
+      images[i].addEventListener("drop", function(){
+      iframe.setAttribute("src", link1);
+      frameContainer.style.display = "block";
+    })
+  }
+}*/
 
 
 window.addEventListener("load", function(){
