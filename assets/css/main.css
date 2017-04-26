@@ -33,7 +33,7 @@
 nav{
 position: absolute;
 top: 30%;
-left:5%;
+left:0%;
 display: none;
 }
 
@@ -68,23 +68,89 @@ nav ul li span{
 
 
 img{
-   border-radius: 15px;
-   width: 100px;
-   height: 100px;
+ position: absolute;
+ border-radius: 15px;
+ width: 130px;
+ height: 100px;
+ cursor: pointer;
+
+  /*border: 2px solid white;
+   border-radius: 50%;*/
 }
+
+
+
+
+#fig9{
+  top: 250px;
+  left: 23%;
+}
+
+#fig7{
+  top: 250px;
+  left: 35%;
+}
+
+#fig1{
+  top: 250px;
+  right: 35%;
+}
+
+#fig4{
+  top: 250px;
+  right: 23%;
+}
+
+#fig6{
+  top: 350px;
+  left: 29%;
+}
+
+#fig2{
+  top: 350px;
+  left: 62%;
+}
+
+#fig8{
+  top: 350px;
+  left: 45.5%;
+}
+
+
+#fig3{
+  top: 420px;
+  right: 37%;
+}
+
+#fig5{
+  top: 420px;
+  left: 37%;
+}
+
+#fig11{
+  top: 140px;
+  left: 29%;
+}
+
+#fig12{
+  top: 140px;
+  left: 62%;
+}
+
 
 .btn-sign{
   position: absolute;
-  top: 50%;
+  top: 20%;
   right: 5%;
 }
 
 .sign-up, .sign-in{
+  display: block;
   font-weight: bolder;
   color: #62459a;
   background-color:rgba(218, 50, 111, 0.8);
   text-decoration: none;
-  width: 100px;
+  width: 110px;
   padding: 10px;
   margin: 25px 10px;
   font-size: 20px;
@@ -149,7 +215,6 @@ form #wrongEmail, form #wrongPassword{
   display: none;
 }
 
-
 form #wrongEmail{
   top: 45.5%;
   display: none;
@@ -190,4 +255,20 @@ form .btn-sign-in{
   background-color: #62459a;
   color: white;
   border-radius: 10px;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
 }

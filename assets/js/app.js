@@ -14,15 +14,17 @@ var botonSignIn = document.getElementsByClassName("btn-sign-in")[0];
 var expressionEmail                = /\w+@+\w+\.+[a-z]/;
 var expressionPassword6Characters  =/^[A-Za-z0-9_]{6,20}$/;
 var nPortadas = 20;
+
 function createImages(){
   for (var i = 1; i <= nPortadas; i++) {
     var div = document.createElement("div");
     var img = document.createElement("img");
+    img.setAttribute("id","fig"+i);
     img.setAttribute("src","assets/img/img-portada/"+i+".png");
+    img.setAttribute("draggable", "true");
     img.classList.add("principal-img");
     div.appendChild(img);
     container.appendChild(div);
-
     }
 }
 
