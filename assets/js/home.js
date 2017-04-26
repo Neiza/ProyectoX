@@ -23,7 +23,7 @@ function showNext1() {
       index=6;
       mySlides[index-1].style.display = "block";
     }
-//  setTimeout(showNext1, t); // Change image every 2 seconds
+  setTimeout(showNext1, t); // Change image every 2 seconds
 }
 
  btnB.addEventListener("click", function(){
@@ -52,8 +52,8 @@ function showNext1() {
    mySlides[index-1].style.display = "block";
  });
 
-var listMovies=20;
-var listSeries=10;
+var listMovies=16;
+var listSeries=8;
 var nameFileMovies="assets/img/img-home/p";
 var nameFileSeries="assets/img/img-home/serie";
 
@@ -72,10 +72,10 @@ function divImage(list,nameFile,slides,nameDiv,type,nameimg){
             divForElement.setAttribute("class","div"+type);
             var imgForElement=document.createElement("img");
             imgForElement.setAttribute("src",nameFile+(i+j)+".jpg");
-            imgForElement.setAttribute("class",nameDiv);
+            imgForElement.setAttribute("class","img"+type);
             divForElement.appendChild(imgForElement);
             var nameElement=document.createElement("span");
-            nameElement.classList.add(type+"S"+(i+1));
+            nameElement.classList.add("icon-play");
 
             divForElement.appendChild(nameElement);
             divFortwo.appendChild(divForElement);
@@ -93,31 +93,34 @@ var indexListS=1;
 var t=5000;
 var btnAfterMovie=document.getElementById("btnAfterMovie");
 var btnBeforeMovie=document.getElementById("btnBeforeMovie");
-var mySlidesMovie = document.getElementsByClassName("divMovieTwo");
-btnBeforeMovie.addEventListener("click", beforeDiv(indexListM,mySlidesMovie));
-btnAfterMovie.addEventListener("click",afterDiv(indexListM,mySlidesMovie) );
-function beforeDiv(indexX,mySlidesX){
+var mySlidesMovie = document.getElementsByClassName("divMovietwo");
+/*
+btnBeforeMovie.addEventListener("click", function (){
+  alert("atra");
   for (i = 0; i < mySlides.length; i++) {
-     mySlidesX[i].style.display = "none";
+     mySlidesMovie[i].style.display = "block";
+
   }
-    indexX=indexX-1;
-    if(indexX>0){
-      console.log(indexX);
-      mySlidesX[indexX-1].style.display = "block";
+    indexListM=indexListM-1;
+    if(indexListM>0){
+      console.log(indexListM);
+      mySlidesMovie[indexListM-1].style.display = "none";
     }
     else{
-      indexX=mySlidesX.length;
-       mySlidesX[indexX-1].style.display = "block";
+      indexListM=mySlidesMovie.length;
+       mySlidesMovie[indexListM-1].style.display = "none";
     }
-}
-function afterDiv(){
-  indexX++;
+});
+btnAfterMovie.addEventListener("click",function (){
+  alert("ajo");
+  indexListM++;
 
-  for (i = 0; i < mySlidesX.length; i++) {
-     mySlidesX[i].style.display = "none";
+  for (i = 0; i < mySlidesMovie.length; i++) {
+     mySlidesMovie[i].style.display = "none";
   }
-  if (indexX > mySlidesX.length) {
-    indexX = 1;
+  if (indexListM > mySlidesMovie.length) {
+    indexListM = 1;
   }
-  mySlidesX[indexX-1].style.display = "block";
+  mySlidesMovie[indexListM-1].style.display = "block";
 }
+);*/

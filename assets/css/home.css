@@ -6,14 +6,20 @@ body{
   padding-right: 5%;
   padding-top: 7%;
   padding-bottom: 3%;
-  background-color: red;
+  background-image:url("../img/img-home/fondo-rayo.jpg") ;
   height: 50%;
+}
+.descp1 h1,.descp1 .encabezado2{
+  font-family: 'Exo', sans-serif;
+}
+.descp1 p{
+  font-family: 'Josefin Slab', serif;
 }
 .content-slide{
   position: relative;
   width: 100%;
   height: 23em;
-  background-color: blue;
+  background-color:#541885;
 }
 .arrows{
   position: absolute;
@@ -22,6 +28,9 @@ body{
   color: #283C61;
   z-index: 1000;
 
+}
+.cont-list h1{
+  font-family: 'Exo', sans-serif;
 }
 .icon-circle-left{
   position: absolute;
@@ -71,14 +80,14 @@ body{
 .cont-list{
   padding-left: 10%;
   padding-right: 10%;
-  background-color: brown;
+  background-color: #E7E2CF;
 }
 
 .cont-list-series{
-  background-color: #E62940;
+  background-color:#5BA4AA;
   position: relative;
   width: 100%;
-  height: 1000px;
+  height: 571px;
 }
 .descp1 h1{
   margin: 9px 1px;
@@ -98,7 +107,7 @@ body{
   height: 13%;
   border-radius: 5px;
   color: white;
-  background-color: red;
+  background-color: #524955;
   position: absolute;
 }
 .btnPlay{
@@ -110,10 +119,10 @@ body{
   bottom: 8%;
 }
 .cont-list-movies{
-  background-color: #39A9DC;
+  background-color: #97D6D0;
   position: relative;
   width: 100%;
-  height: 580px;
+  height: 1080px;
   padding-top: 2%;
   padding-bottom: 2%;
 
@@ -125,23 +134,25 @@ body{
   padding-right: 4%;
 }
 .divMovietwo, .divSerietwo{
-  background-color: red;
+
   position: relative;
     display: inline-block;
     width: 20%;
-    height: 450px;
+    height: 500px;
 margin: 0.5% 2%;
 }
 .divMovie, .divSerie{
     display: inline-block;
+    position: relative;
     width: 88%;
-    height: 215px;
+    height: 220px;
     margin: 5% 5% 3% 3%;
 }
 
 .cont-list img{
   width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 .icon-device-camera-video, .icon-live_tv{
   margin-left: 10px;
@@ -152,4 +163,31 @@ margin: 0.5% 2%;
   height: 100%;
   color: #283C61;
   z-index: 1000;
+}
+.btnAfterMovie{
+  position: absolute;
+  top:50px;
+  right: 0;
+}
+.btnBeforeMovie{
+  position: absolute;
+  top:50px;
+  right: 0;
+}
+.divMovietwo{
+  display: inline-block;
+}
+.divMovie:hover .imgMovie,.divSerie:hover .imgSerie{
+  opacity: 0.3;
+}
+.divMovie .icon-play,.divSerie .icon-play{
+  left: 36%;
+  top: 38%;
+  position: absolute;
+  font-size: 50px;
+  color: white;
+  visibility: hidden;
+}
+.divMovie:hover .icon-play,.divSerie:hover .icon-play{
+  visibility: visible;
 }
