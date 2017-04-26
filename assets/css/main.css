@@ -1,11 +1,339 @@
-body{
-   background:transparent url("../img/cargando.gif") center  center
-   no-repeat;
+*{
+}
+.background{
+   background-image: url("../img/background/background3.jpg");
+   background-repeat: no-repeat;
+   position: fixed;
+   display: inline-block;
+    z-index: -1;
+    top: 0;
+   right: 0;
+    opacity: .9;
+    width: 100%;
+    height: 100%;
 }
 
+.logo{
+  display: inline-block;
+  position: absolute;
+  top: 6%;
+  left: 41%;
+}
+
+.logo img{
+  width: 220px;
+  height: 10px;
+  border-radius: 50%;
+
+}
+
+.menu {
+  padding: 10px 30px;
+  margin: 0 10px;
+  position: absolute;
+  top: 20%;
+  left: 2%;
+  font-size: 20px;
+  border: 2px solid #da326f;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.btn-menu, .icon-menu{
+  color: #da326f;
+  text-decoration: none;
+}
+
+nav{
+position: absolute;
+top: 30%;
+left:0%;
+display: none;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li{
+  width: 200px;
+  padding: 10px;
+  margin: 25px 10px;
+  font-size: 20px;
+  border: 2px solid #da326f;
+  border-radius: 20px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  margin-left: 15px;
+  color: #da326f;
+}
+
+nav ul li span{
+  padding: 5px 10px 5px 5px;
+  color: #da326f;
+
+}
+
+.show{
+  display: block;
+}
+
+
 img{
-   border-radius: 15px 50px;
-   padding: 20px;
-   width: 200px;
-   height: 150px;
+ position: absolute;
+ border-radius: 15px;
+ width: 130px;
+ height: 100px;
+ cursor: pointer;
+ transform: scale(1);
+
+  /*border: 2px solid white;
+   border-radius: 50%;*/
+}
+
+img:hover{
+  transform: scale(1.5);
+  z-index: 2;
+  transition: 1s;
+
+}
+
+
+
+
+#fig1{
+  top: 250px;
+  left: 23%;
+}
+
+#fig2{
+  top: 250px;
+  left: 35%;
+}
+
+#fig3{
+  top: 250px;
+  right: 35%;
+}
+
+#fig4{
+  top: 250px;
+  right: 23%;
+}
+
+#fig5{
+  top: 350px;
+  left: 29%;
+}
+
+#fig6{
+  top: 350px;
+  left: 62%;
+}
+
+#fig7{
+  top: 350px;
+  left: 45.5%;
+}
+
+
+#fig8{
+  top: 420px;
+  right: 37%;
+}
+
+#fig9{
+  top: 420px;
+  left: 37%;
+}
+
+#fig10{
+  top: 140px;
+  left: 29%;
+}
+
+#fig11{
+  top: 140px;
+  left: 62%;
+}
+
+
+.btn-sign{
+  position: absolute;
+  top: 20%;
+  right: 5%;
+}
+
+.sign-up, .sign-in{
+  display: block;
+  font-weight: bolder;
+  color: #62459a;
+  background-color:rgba(218, 50, 111, 0.8);
+  text-decoration: none;
+  width: 110px;
+  padding: 10px;
+  margin: 25px 10px;
+  font-size: 20px;
+  border: 2px solid #da326f;
+  border-radius: 20px;
+}
+
+.sign-up:hover, .sign-in:hover{
+font-size: 25px;
+transition: 1s;
+}
+
+.sign-in-container{
+  box-sizing: border-box;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(98, 69, 154, 0.6);
+  display:none;
+  width:100%;
+  height: 100%;
+}
+
+.form-sign-in{
+  box-sizing: border-box;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 30%;
+  height: 60%;
+  padding: 5%;
+  background-color: white;
+  border: 10px solid #946baf;
+}
+form h2 {
+  letter-spacing: 4px;
+  word-spacing: 7px;
+}
+
+form #X{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  color: #62459a;
+  font-weight: bold;
+}
+
+form .email, form .password {
+  position: absolute;
+  width: 60%;
+  height: 7%;
+  border:2px solid rgba(98, 69, 154, 0.6);
+}
+
+form #wrongEmail, form #wrongPassword{
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  font-size: 0.8em;
+  color: #3276b1;
+  display: none;
+}
+
+form #wrongEmail{
+  top: 45.5%;
+  display: none;
+}
+
+form .password{
+  top: 50%;
+}
+
+form #forgot{
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+  text-decoration: none;
+  color: black;
+  }
+
+form .check-box{
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  width: 15px;
+  height: 15px;
+}
+
+form #rememberme{
+  position: absolute;
+  bottom: 15%;
+  left: 17%;
+}
+
+form .btn-sign-in{
+  position: absolute;
+  top: 65%;
+  left: 35%;
+  width: 100px;
+  height: 30px;
+  background-color: #62459a;
+  color: white;
+  border-radius: 10px;
+}
+
+.frame{
+  box-sizing: border-box;
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.9);
+  width:100%;
+  height: 100%;
+  display: none;
+}
+
+
+iframe{
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+
+#xFrame{
+  font-size: 30px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+  color: #da326f;
+  font-weight: bold;
+}
+
+.drag-drop{
+  position: absolute;
+  bottom: 15%;
+  right: 12%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid  #da326f;
+  border-radius: 50%;
+
+}
+
+
+.icon-play2{
+  position: absolute;
+  top:9px;
+  left: 10px;
+  color: #da326f;
+  font-size: 2em;
+}
+
+.text-trailer{
+  position: absolute;
+  bottom: 9%;
+  right: 0;
+  color: #da326f;
+  display:inline-block;
+  width: 300px;
+  height:10px;
 }
