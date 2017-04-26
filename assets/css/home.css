@@ -110,14 +110,20 @@ body{
   color: white;
   background-color: #524955;
   position: absolute;
+
+}
+.btnPlay a ,.btnDesc a{
+  text-decoration: none;
 }
 .btnPlay{
   right: 58%;
   bottom:8%;
+  text-decoration: none;
 }
 .btnDesc{
   right: 11%;
   bottom: 8%;
+  text-decoration: none;
 }
 .cont-list-movies{
   background-color: #97D6D0;
