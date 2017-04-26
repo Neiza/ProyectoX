@@ -6,22 +6,57 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PROYECTO X</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/fonts/icon-fonts/style.css">
 </head>
 <body>
-  <div class="menu">
-    <ul>
-      <li><a href="#"><span class=""></span>HOME</a></li>
-      <li><a href="#"><span class=""></span>MOVIES</a></li>
-      <li><a href="#"><span class=""></span>SERIES</a></li>
-      <li><a href="#"><span class=""></span>REGISTER</a></li>
-    </ul>
+    <div class="logo">
+      <img src="assets\img\background\logo1.jpg" alt="">
+    </div>
+    <div class="menu">
+    <a href="#" class="btn-menu">MENU <span class="icon-menu"></span></a>
   </div>
+  <nav id="nav-bar">
+    <ul>
+      <li><a href="#"><span class="icon-home-outline"></span>HOME</a></li>
+      <li><a href="#"><span class="icon-film"></span>MOVIES</a></li>
+      <li><a href="#"><span class="icon-tv2"></span>SERIES</a></li>
+      <li><a href="#"><span class="icon-edit"></span>REGISTER</a></li>
+    </ul>
+  </nav>
   <div class="container">
     <!-- aquí se agruparan las imágenes-->
   </div>
-  <div class="">
-    <input type="button" name="sign-up" value="Sign up">
-    <input type="button" name="sign-in" value=" Sign in">
+  <div class="btn-sign">
+    <a  href="#" class="sign-up">SIGN UP</a>
+    <a  href="#" class="sign-in">SIGN IN</a>
   </div>
+  <div class="sign-in-container">
+    <form class="form-sign-in"  method="get">
+      <h2>SIGN IN</h2>
+      <span id="X">X</span>
+      <input class="email" type="email" name="email" value="" placeholder="Email">
+      <span id="wrongEmail"></span>
+      <br>
+      <input class="password" type="password" name="password" value="" placeholder="Password">
+      <span id="wrongPassword"></span>
+      <br>
+      <input class="check-box" type="checkbox" name="" value=""><span id="rememberme">Remember me</span>
+      <a href="#" id="forgot">Forgot your password?</a>
+      <input  class="btn-sign-in" type="button" name="" value="SIGN IN">
+    </form>
+  </div>
+  <div class="background">
+  </div>
+  <div class="frame" id="frameContainer">
+    <iframe  id="frame" width="550" height="370"  frameborder="0" allowfullscreen></iframe>
+    <span id="xFrame">X</span>
+  </div>
+  <div class="drag-drop">
+    <span class="icon-play2"></span>
+  </div>
+  <h4 class="text-trailer">Drag over here and wath the trailer</h4>
+  <script type="text/javascript" src="assets/js/app.js">
+
+  </script>
 </body>
 </html>
